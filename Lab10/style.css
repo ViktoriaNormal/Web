@@ -1,0 +1,127 @@
+/* anybody-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/anybody-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* anybody-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/anybody-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* anybody-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/anybody-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* anybody-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/anybody-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+
+main {
+    background-color: #bbbaba;
+    color: black;
+    padding: 20px;
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+img {
+    width: 150px;
+    height:60px;
+}
+
+body {
+    background-color: #bbbaba;
+    font-family: 'Anybody';
+    font-size: 20px;
+}
+
+textarea {
+    border-radius: 5px;
+    font-family: 'Anybody';
+    font-size: 20px;
+    color: black;
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    font-family: 'Anybody';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #ffd95a;
+    margin-top: 16px;
+    border-radius: 5px;
+    border-color: #826e2d;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table td{
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+}
+
+table th{
+  border-width: 1px;
+  border-style: solid;
+}
+
+button {
+  background-color: #ffd95a;
+  border-color: #826e2d;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+a {
+  font-family: 'Anybody';
+  font-size: 20px;
+  color:#000000;
+}
+
+

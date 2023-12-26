@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=Inclusive+Sans&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="link" href="homepage.html">Home</a>
+            <a class="link" href="feedback.html">Feedback</a>
+            <a class="link" href="auth.html">Authentication</a>
+        </nav>
+    </header>
+    <h1>Authentication</h1>
+
+    <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="Spongebob" required>
+        <br>
+
+        <label for="password">password:</label>
+        <input type="password" id="password">
+        <br>
+
+        <label for="accept">Remember me</label>
+        <input type="checkbox" id="accept" >
+        <br><br>
+
+        <button type="submit" id="submit">Enter</button>
+        </form>
+</body>
+</html>

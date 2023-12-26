@@ -1,0 +1,49 @@
+/* anybody-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/anybody-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* anybody-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/anybody-v11-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* anybody-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/anybody-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* anybody-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/anybody-v11-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  html{
+    box-sizing: border-box;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+  body{
+    background-image: url('black.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Anybody';
+    font-style: normal;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: normal;
+    color: #ffffff;
+  }

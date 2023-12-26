@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(221, 255, 241);
+    background-image: url('neon.jpg');
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inclusive Sans', sans-serif;
+    color: rgb(221, 255, 241);
+    font-size: 45px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+nav{
+    color: white;
+}
+.link{
+    margin-left: 30px;
+    font-family: "Open Sans", verdana;
+    color: rgb(221, 255, 241);
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+}
+form{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Inclusive Sans', sans-serif;
+    color: rgb(221, 255, 241);
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+}
+#username{
+    background-color: rgb(221, 255, 241);
+}
+#email{
+    background-color: rgb(221, 255, 241);
+}
+#type{
+    background-color: rgb(221, 255, 241);
+}
+#comment{
+    background-color: rgb(221, 255, 241);
+}
+#file{
+    background-color: rgb(221, 255, 241);
+}
+#accept{
+    background-color: rgb(221, 255, 241);
+}
+#reset{
+    background-color: rgb(221, 255, 241);
+}
+#submit{
+    background-color: rgb(221, 255, 241);
+}

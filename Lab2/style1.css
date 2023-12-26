@@ -1,0 +1,57 @@
+body{
+    background-color: hsl(0, 0%, 0%);
+    background-image: url('neon1.jpg');
+}
+h1{
+    margin-left: 30px;
+    font-family: "Open Sans", verdana;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+}
+nav{
+    color: white;
+}
+.link{
+    margin-left: 30px;
+    font-family: "Open Sans", verdana;
+    color: rgb(217, 0, 255);
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+}
+h3{
+    margin-left: 30px;
+    font-family: "Open Sans", verdana;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+table{
+    margin-left: 30px;
+    border-style:groove;
+    border-color: white;
+}
+.rowup{
+    font-family: "Open Sans", "lucida console", "courier new";
+    color: rgb(223, 243, 255);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: rgb(148, 113, 189);
+}
+.row{
+    font-family: "Open Sans", "lucida console", "courier new";
+    color: rgb(143, 211, 253);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: rgb(40, 0, 86);
+}
+.contact{
+    margin-left: 30px;
+    font-family: "Open Sans", verdana;
+    color: rgb(217, 0, 255);
+}

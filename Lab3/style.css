@@ -1,0 +1,93 @@
+body {
+    background-image: url('burger.jpg');
+    color: rgb(201, 172, 122);
+    /* font-family: 'Hind', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    min-height: 110vh;
+    background-position: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    background-color: #212121;
+    padding: 25px;
+    /* position: fixed; */
+    top: 0;
+
+    min-width: 95vw;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.active {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(254, 238, 209)
+}
+
+.div1 {
+    margin-top: 4px;
+    padding: 20px;
+    /* font-style: normal; */
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 20px; */
+    font-style: italic;
+}
+
+.div2{
+    margin-top: 15px;
+    /* position: absolute; */
+    font-style: italic;
+    width: 50%;
+    font-size: 24px;
+    margin: 0 auto auto 25px;
+}
+
+footer {
+    color: rgb(254, 238, 209);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background-color: #212121;
+    padding: 25px;
+    /* position: fixed; */
+    /* bottom: 0;
+    left: 0; */
+
+    min-width: 95vw;
+    text-align: left;
+    margin: 0;
+    /* color: rgb(254, 238, 209) */
+}

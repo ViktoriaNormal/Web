@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<html>
+  <body>
+    <h1>Реализация функций в JavaScript</h1>
+    <h2>Возведение в степень</h2>
+    <label for="pow-x">Введите число x:</label>
+    <input type="number" id="pow-x">
+    <br>
+    <label for="pow-n">Введите натуральное число n:</label>
+    <input type="number" id="pow-n">
+    <br>
+    <button onclick="showPowResult()">Показать результат</button>
+    <p id="pow-result"></p>
+
+    <h2>Нахождение НОД</h2>
+    <label for="gcd-a">Введите неотрицательное число a:</label>
+    <input type="number" id="gcd-a">
+    <br>
+    <label for="gcd-b">Введите неотрицательное число b:</label>
+    <input type="number" id="gcd-b">
+    <br>
+    <button onclick="showGcdResult()">Показать результат</button>
+    <p id="gcd-result"></p>
+
+    <h2>Наименьшая цифра</h2>
+    <label for="min-digit-x">Введите неотрицательное целое число x:</label>
+    <input type="number" id="min-digit-x">
+    <br>
+    <button onclick="showMinDigitResult()">Показать результат</button>
+    <p id="min-digit-result"></p>
+
+    <h2>Pluralization</h2>
+    <label for="pluralize-n">Введите неотрицательное целое число n:</label>
+    <input type="number" id="pluralize-n">
+    <br>
+    <button onclick="showPluralizeResult()">Показать результат</button>
+    <p id="pluralize-result"></p>
+
+    <h2>Числа Фибоначчи</h2>
+    <label for="fibb-n">Введите натуральное число n:</label>
+    <input type="number" id="fibb-n">
+    <br>
+    <button onclick="showFibbResult()">Показать результат</button>
+    <p id="fibb-result"></p>
+
+    <script>// Функция возведения в степень
+      function pow(x, n) {
+        let result = 1;
+        for (let i = 0; i < n; i++) {
+          result *= x;
+        }
+        return result;
+      }
+
+      // Функция нахождения НОД
+      function gcd(a, b) {
+        if (a === '' || b === '') {
+          return
+        };
+        while (b !== 0) {
+        let temp = a % b;
+        a = b;
+        b = temp;
+        }
+        return a;
+      }
+
+      // Функция нахождения наименьшей цифры
+      function minDigit(x) {
+        let digits = x.toString().split('').map(Number);
+        return Math.min(...digits);
+      }
+
+      // Pluralization
+        function pluralizeRecords(n) {
+            if (n === '') return;
+
+            let recordsWord;
+            let recordsWord2;
+            let recordsWord3;
+
+            if (n % 10 === 1 && n % 100 !== 11) {
+                recordsWord = "запись";
+                recordsWord2 = "была";
+                recordsWord3 = "найдена";
+
+            } 
+
+            else if (
+            (n % 10 === 2 && n % 100 !== 12) ||
+            (n % 10 === 3 && n % 100 !== 13) ||
+            (n % 10 === 4 && n % 100 !== 14)
+            ) {
+                recordsWord = "записи";
+                recordsWord2 = "были";
+                recordsWord3 = "найдены";
+            }
+
+            else {
+                recordsWord = "записей";
+                recordsWord2 = "было";
+                recordsWord3 = "найдено";
+            }
+        return `В результате выполнения запроса ${recordsWord2} ${recordsWord3} ${n} ${recordsWord}`;
+        }
+
+      // Функция нахождения n-го числа Фибоначчи
+      function fibb(n) {
+        let a = 1, b = 1;
+        for (let i = 3; i <= n; i++) {
+          let c = a + b;
+          a = b;
+          b = c;
+        }
+        return b;
+      }
+
+      function showPowResult() {
+        let x = document.getElementById('pow-x').value;
+        let n = document.getElementById('pow-n').value;
+        let result = pow(x, n);
+        document.getElementById('pow-result').textContent = `Результат: ${result}`;
+      }
+
+      function showGcdResult() {
+        let a = document.getElementById('gcd-a').value;
+        let b = document.getElementById('gcd-b').value;
+        let result = gcd(a, b);
+        document.getElementById('gcd-result').textContent = `Результат: ${result}`;
+      }
+
+      function showMinDigitResult() {
+        let x = document.getElementById('min-digit-x').value;
+        let result = minDigit(x);
+        document.getElementById('min-digit-result').textContent = `Результат: ${result}`;
+      }
+
+      function showPluralizeResult() {
+        let n = Number(document.getElementById('pluralize-n').value);
+        let result = pluralizeRecords(n);
+        document.getElementById('pluralize-result').textContent = result;
+      }
+
+      function showFibbResult() {
+        let n = document.getElementById('fibb-n').value;
+        let result = fibb(n);
+        document.getElementById('fibb-result').textContent = `Результат: ${result}`;
+      }</script>
+  </body>
+</html>

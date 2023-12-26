@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+header, footer {
+  background-color: rgba(17, 16, 16, 0.90);
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
